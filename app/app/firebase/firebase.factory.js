@@ -1,3 +1,6 @@
+/**
+ * Created by Kelvin on 6/28/2016.
+ */
 (function() {
     'use strict';
 
@@ -6,12 +9,10 @@
 
     function FirebaseFactory() {
 
-        // Initialize Firestore
-        var db = firebase.firestore();
-
         // Public API here
         return {
-            database: db
+            database: firebase.database()
         };
     }
 })();
+
