@@ -82,7 +82,8 @@
 		 
 		<script src="./js/v2.js"></script>
 		
-		<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 		<script>
 			// Initialize Firebase
 			var config = {
@@ -95,6 +96,8 @@
 				measurementId: "G-YS2Q7D974Y"
 			};
 			firebase.initializeApp(config);
+			// Initialize Firestore
+			var db = firebase.firestore();
 		</script>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-loader.min.js"></script>
@@ -104,6 +107,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
 		
 		<script src="./js/ui-bootstrap/ui-bootstrap-custom-tpls-2.0.1.tak.js"></script>
-		<script src="app/app-d0ada636ba.js"></script>
+		<script src="app/app-d307fe3cb4.js"></script>
 	</body>
 </html>

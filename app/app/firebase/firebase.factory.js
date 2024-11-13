@@ -1,10 +1,11 @@
 (function() {
     'use strict';
 
-    angular.module('sophiaAndRichard')
+    angular
+        .module('sophiaAndRichard')
         .factory('FirebaseFactory', FirebaseFactory);
 
-    function FirebaseFactory() {
+    FirebaseFactory.$inject = ['$q'];
 
         // Initialize Firestore
         var db = firebase.firestore();
@@ -13,5 +14,7 @@
         return {
             database: db
         };
+
+        return factory;
     }
-})();
+)();

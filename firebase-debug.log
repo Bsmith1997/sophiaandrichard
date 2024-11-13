@@ -1,0 +1,43 @@
+[debug] [2024-11-13T04:36:49.708Z] ----------------------------------------------------------------------
+[debug] [2024-11-13T04:36:49.709Z] Command:       /opt/homebrew/Cellar/node/18.8.0/bin/node /opt/homebrew/bin/firebase serve
+[debug] [2024-11-13T04:36:49.709Z] CLI Version:   13.24.2
+[debug] [2024-11-13T04:36:49.709Z] Platform:      darwin
+[debug] [2024-11-13T04:36:49.709Z] Node Version:  v18.8.0
+[debug] [2024-11-13T04:36:49.712Z] Time:          Tue Nov 12 2024 23:36:49 GMT-0500 (Eastern Standard Time)
+[debug] [2024-11-13T04:36:49.712Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-13T04:36:49.749Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-13T04:36:49.749Z] > authorizing via signed-in user (bubbles.smith.1997@gmail.com)
+[debug] [2024-11-13T04:36:49.749Z] [iam] checking project sophiaandrichardwedding for permissions ["firebase.projects.get"]
+[debug] [2024-11-13T04:36:49.750Z] Checked if tokens are valid: true, expires at: 1731474953350
+[debug] [2024-11-13T04:36:49.750Z] Checked if tokens are valid: true, expires at: 1731474953350
+[debug] [2024-11-13T04:36:49.751Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sophiaandrichardwedding:testIamPermissions [none]
+[debug] [2024-11-13T04:36:49.751Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sophiaandrichardwedding:testIamPermissions x-goog-quota-user=projects/sophiaandrichardwedding
+[debug] [2024-11-13T04:36:49.751Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sophiaandrichardwedding:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-11-13T04:36:50.019Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sophiaandrichardwedding:testIamPermissions 200
+[debug] [2024-11-13T04:36:50.020Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sophiaandrichardwedding:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-11-13T04:36:50.020Z] Checked if tokens are valid: true, expires at: 1731474953350
+[debug] [2024-11-13T04:36:50.020Z] Checked if tokens are valid: true, expires at: 1731474953350
+[debug] [2024-11-13T04:36:50.020Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sophiaandrichardwedding [none]
+[debug] [2024-11-13T04:36:50.251Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sophiaandrichardwedding 200
+[debug] [2024-11-13T04:36:50.252Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sophiaandrichardwedding {"projectId":"sophiaandrichardwedding","projectNumber":"1012150014861","displayName":"SophiaAndRichardWedding","name":"projects/sophiaandrichardwedding","resources":{"hostingSite":"sophiaandrichardwedding"},"state":"ACTIVE","etag":"1_47273b7c-e086-4ad5-9a1d-00dd706a5e0b"}
+[info] 
+[info] === Serving from '/Users/babettesmith/Desktop/git/sophiaandrichard'...
+[info] 
+[debug] [2024-11-13T04:36:50.254Z] Checked if tokens are valid: true, expires at: 1731474953350
+[debug] [2024-11-13T04:36:50.254Z] Checked if tokens are valid: true, expires at: 1731474953350
+[debug] [2024-11-13T04:36:50.255Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/sophiaandrichardwedding/sites 
+[debug] [2024-11-13T04:36:50.685Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/sophiaandrichardwedding/sites 200
+[debug] [2024-11-13T04:36:50.685Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/sophiaandrichardwedding/sites {"sites":[{"name":"projects/sophiaandrichardwedding/sites/sophiaandrichardwedding","defaultUrl":"https://sophiaandrichardwedding.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-11-13T04:36:50.685Z] Checked if tokens are valid: true, expires at: 1731474953350
+[debug] [2024-11-13T04:36:50.686Z] Checked if tokens are valid: true, expires at: 1731474953350
+[debug] [2024-11-13T04:36:50.686Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sophiaandrichardwedding/webApps/-/config [none]
+[debug] [2024-11-13T04:36:51.195Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sophiaandrichardwedding/webApps/-/config 200
+[debug] [2024-11-13T04:36:51.195Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sophiaandrichardwedding/webApps/-/config {"projectId":"sophiaandrichardwedding","appId":"1:1012150014861:web:a4cb55de5814147acce3c4","storageBucket":"sophiaandrichardwedding.firebasestorage.app","apiKey":"AIzaSyDKW_iEWFOMAB01tXop0L2uKeanm4Eef5A","authDomain":"sophiaandrichardwedding.firebaseapp.com","messagingSenderId":"1012150014861","measurementId":"G-YS2Q7D974Y"}
+[debug] [2024-11-13T04:36:51.202Z] Checked if tokens are valid: true, expires at: 1731474953350
+[debug] [2024-11-13T04:36:51.202Z] Checked if tokens are valid: true, expires at: 1731474953350
+[debug] [2024-11-13T04:36:51.202Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sophiaandrichardwedding [none]
+[debug] [2024-11-13T04:36:51.382Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sophiaandrichardwedding 200
+[debug] [2024-11-13T04:36:51.382Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sophiaandrichardwedding {"projectId":"sophiaandrichardwedding","projectNumber":"1012150014861","displayName":"SophiaAndRichardWedding","name":"projects/sophiaandrichardwedding","resources":{"hostingSite":"sophiaandrichardwedding"},"state":"ACTIVE","etag":"1_47273b7c-e086-4ad5-9a1d-00dd706a5e0b"}
+[info] i  hosting[sophiaandrichardwedding]: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] ✔  hosting[sophiaandrichardwedding]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
