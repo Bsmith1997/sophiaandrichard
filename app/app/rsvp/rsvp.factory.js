@@ -1,6 +1,3 @@
-/**
- * Created by Kelvin on 6/18/2016.
- */
 (function(firebase) {
     'use strict';
 
@@ -18,16 +15,18 @@
         function getData(code) {
             var self = this;
             return $q(function(resolve, reject) {
-                var ref = FirebaseFactory.database.ref('codes/' + code);
-                ref.on('value', function(snapshot) {
-                    self.data = snapshot.val();
-                    if(self.data) {
-                        self.key = snapshot.key;
+                // Use Firestore instead of Realtime Database
+                var ref = FirebaseFactory.firestore.collection('codes').doc(code);
+                
+                ref.get().then(function(doc) {
+                    if (doc.exists) {
+                        self.data = doc.data();
+                        self.key = doc.id;
                         resolve(self);
                     } else {
-                        reject(null);
+                        reject(null); // Document not found
                     }
-                });
+                }).catch(reject);
             });
         }
 
@@ -35,7 +34,11 @@
             var self = this;
             newData.responded = true;
             return $q(function(resolve, reject) {
-                FirebaseFactory.database.ref('codes/' + self.key).set(newData).then(resolve).catch(reject);
+                // Use Firestore to save the data
+                FirebaseFactory.firestore.collection('codes').doc(self.key)
+                    .set(newData)
+                    .then(resolve)
+                    .catch(reject);
             });
         }
     }
